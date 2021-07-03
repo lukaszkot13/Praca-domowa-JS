@@ -126,6 +126,60 @@ dzielimy();
 
 //    ZROBIĆ !!
 
+// tego zadanie nie wiedziałem jak zrobić
+console.log(`zadanie 11`);
+const arr11 = [101, 102, 103, 104];
+
+const wiekszyOd100 = arr11.some((namber) => namber > 100);
+const wiekszyOd100_1 = some((namber) => namber > 100);
+
+function some(fn) {
+  for (let i = 0; i < arr11.length; i++) {
+    const number = arr11[i];
+    if (fn(number)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(wiekszyOd100);
+console.log(wiekszyOd100_1);
+
+//12
+
+console.log(`zadanie 12`);
+
+function every2(fn) {
+  for (let i = 0; i < this.length; i++) {
+    const number = this[i];
+    if (!fn(number)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+Array.prototype.every2 = every2;
+
+const wiekszyOd100_2 = arr11.every((number) => number > 100);
+const wiekszyOd100_3 = arr11.every2((number) => number > 100);
+
+console.log(wiekszyOd100_2);
+console.log(wiekszyOd100_3);
+
+// reduce
+
+function reduce2(fn, initialValue) {
+  for (let i = 0; i < this.length; i++) {}
+}
+function sumuj(suma, number) {
+  return suma + number;
+}
+const sum11 = arr11.reduce(sumuj, 0);
+// const sum = arr11.reduce((sum, number) => sum + number, 0);
+
+console.log(sum11);
 //13
 
 const tablica = [1, 2, 3, 4, 5, "string", "imie", "nazwisko"];
