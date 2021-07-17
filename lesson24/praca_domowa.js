@@ -108,7 +108,7 @@ async function strona() {
   $aktualnaStrona.innerHTML = console.log("char", characters);
 
   const $page = document.getElementById("aktualnaStrona");
-  $page.innerHTML = 1;
+  $page.innerHTML = `${page}`;
 
   const $allPage = document.getElementById("wszystkie");
   $allPage.innerHTML = characters.info.pages;
